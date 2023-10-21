@@ -303,14 +303,11 @@ body{
 .cart{
     letter-spacing: 1.84px;
     cursor: pointer;
+    font-weight: 700;
 }
 .cart svg{
     width: 1.67vw;
     aspect-ratio: 1/1;
-}
-.cart .lix{
-    width: 0.7vw;
-    aspect-ratio: 14/12;
 }
 .cart .flexlittle{
     gap: 0.2vw;
@@ -549,7 +546,7 @@ body{
     font-family: 'Inter', sans-serif;
 }
 .furniture-filters section div{
-    height:11.5vw;
+    height: 11.5vw;
     font-family: 'Inter', sans-serif;
 }
 .furniture-filters section:has(.hidefilter) div{
@@ -599,7 +596,7 @@ body{
     font-weight: 600;
     letter-spacing: 0.36px;
     cursor: pointer;
-    width: 80%;
+    width: 85%;
     margin-left: 0.5vw;
     display: flex;
     align-items: center;
@@ -630,6 +627,9 @@ body{
 .cart-item img{
     width: 4.3vw;
     aspect-ratio: 1/1;
+}
+.cart-img-cont{
+    border: 1px solid #DCDCDC;
 }
 .cart-item section{
     flex: 1;
@@ -742,6 +742,17 @@ body{
 .profile .fxxs svg{
     width: 0.489vw;
     aspect-ratio: 9.39/7.807;
+}
+.cart-active p{
+    color: #716E6A;
+    font-weight: 900 !important;
+}
+.cart-active .wallet path{
+    fill: #3686FF;
+}
+.cart .lix{
+    width: 0.7vw;
+    aspect-ratio: 14/12;
 }
 @media screen and (min-width: 1920px) {
     ::-webkit-scrollbar {
