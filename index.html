@@ -63,8 +63,8 @@
                             </div>
                         </div>
                         <p class="fs bold home-tab pressed">HOME</p>
-                        <p class="fs bold furniture-tab">APPLIANCES</p>
-                        <p class="fs bold decoration-tab">ELECTRONICS</p>
+                        <p class="fs bold appliances-tab">APPLIANCES</p>
+                        <p class="fs bold electronics-tab">ELECTRONICS</p>
                         <p class="fs bold set-tab">SETS</p>
                     </section>
                 </div>
@@ -89,17 +89,17 @@
                         <section>
                             <div>
                                 <h1>WELCOME TO E-WORLD</h1>
-                                <p>Where Style Ignites Your Space</p>
+                                <p>Where Style Ignites Your Space.</p>
                             </div>
                             <button class="pointer flexlittle bold">
                                 SPECIAL OFFERS
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="13" viewBox="0 0 19 13" fill="none">
-                                    <path d="M9.50002 12.8333L19 3.33334L16.625 0.958336L9.49998 8.08338L2.37499 0.958386L-4.15256e-07 3.33339L9.50002 12.8333Z" fill="#4A4A4A"/>
+                                    <path d="M9.50002 12.8333L19 3.33334L16.625 0.958336L9.49998 8.08338L2.37499 0.958386L-4.15256e-07 3.33339L9.50002 12.8333Z" fill="#fff"/>
                                 </svg>
                             </button>
                         </section>
                         <section class="heroimage">
-                            <img src="images/hero.png" alt="hero image">
+                            <img src="images/electronics.png" alt="hero image">
                         </section>
                     </div>
                     <div class=" page">
@@ -114,190 +114,271 @@
                     </div>
                 </div>
                 
-                <div class="furniture hide-element page">
-                    <section class="furniture-cont">
-                        <h2 class="center pageheader furniture-header upper">FURNITURE</h2>
+                <div class=" appliance hide-element page">
+                    <section class="appliances-cont">
+                        <h2 class="center pageheader appliances-header upper">APPLIANCES</h2>
                         <div class="furniture-grid">
                             <div class="furniture-filters">
-                                <section>
-                                    <h2 class="furniture-living-room" onclick="toggleFilter('furniture-living-room')">
+                                <!-- <section>
+                                    <h2 class="electronic-computing" onclick="toggleFilter('electronic-computing')">
                                         LIVING ROOM 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
-                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#567367"/>
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#567367"/>
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
                                         </svg>
                                     </h2>
-                                    <div class="furniture-living-room-filters">
-                                        <p class="furniture-filter flr-coffee-table" onclick="filterFurnitureItems('coffee-table', 'livingroom', 'flr-coffee-table')">COFFEE TABLE
+                                    <div class="electronic-computing-filters">
+                                        <p class="electronic-filter ec-laptops" onclick="filterElectronics('laptops', 'computing', 'ec-laptops')">COFFEE TABLE
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter flr-side-table" onclick="filterFurnitureItems('side-table', 'livingroom', 'flr-side-table')">SIDE TABLES
+                                        <p class="electronic-filter ec-side-table" onclick="filterElectronics('side-table', 'computing', 'ec-side-table')">SIDE TABLES
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter flr-armchairs" onclick="filterFurnitureItems('armchairs', 'livingroom', 'flr-armchairs')">ARMCHAIRS
+                                        <p class="electronic-filter ec-armchairs" onclick="filterElectronics('armchairs', 'computing', 'ec-armchairs')">ARMCHAIRS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter flr-tv-furniture" onclick="filterFurnitureItems('tv-furniture', 'livingroom', 'flr-tv-furniture')">TV FURNITURE
+                                        <p class="electronic-filter ec-tv-furniture" onclick="filterElectronics('tv-furniture', 'computing', 'ec-tv-furniture')">TV FURNITURE
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter flr-sofa" onclick="filterFurnitureItems('sofa', 'livingroom', 'flr-sofa')">SOFA
+                                        <p class="electronic-filter ec-sofa" onclick="filterElectronics('sofa', 'computing', 'ec-sofa')">SOFA
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter flr-lighting" onclick="filterFurnitureItems('lighting', 'livingroom', 'flr-lighting')">LIGHTING
+                                        <p class="electronic-filter ec-lighting" onclick="filterElectronics('lighting', 'computing', 'ec-lighting')">LIGHTING
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
                                     </div>
                                 </section>
                                 <section>
-                                    <h2 class="furniture-dining-room" onclick="toggleFilter('furniture-dining-room')">
+                                    <h2 class="electronic-entertainment" onclick="toggleFilter('electronic-entertainment')">
                                         DINING ROOM 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
-                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#567367"/>
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#567367"/>
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
                                         </svg>
                                     </h2>
-                                    <div class="furniture-dining-room-filters">
-                                        <p class="furniture-filter fdr-table" onclick="filterFurnitureItems('table', 'diningroom', 'fdr-table')">TABLE
+                                    <div class="electronic-entertainment-filters">
+                                        <p class="electronic-filter fdr-table" onclick="filterElectronics('table', 'diningroom', 'fdr-table')">TABLE
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fdr-chairs" onclick="filterFurnitureItems('chairs', 'diningroom', 'fdr-chairs')">CHAIRS
+                                        <p class="electronic-filter fdr-chairs" onclick="filterElectronics('chairs', 'diningroom', 'fdr-chairs')">CHAIRS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fdr-shelf" onclick="filterFurnitureItems('shelf', 'diningroom', 'fdr-shelf')">SHELF
+                                        <p class="electronic-filter fdr-shelf" onclick="filterElectronics('shelf', 'diningroom', 'fdr-shelf')">SHELF
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fdr-cupboard" onclick="filterFurnitureItems('cupboard', 'diningroom', 'fdr-cupboard')">CUPBOARD
+                                        <p class="electronic-filter fdr-cupboard" onclick="filterElectronics('cupboard', 'diningroom', 'fdr-cupboard')">CUPBOARD
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fdr-lighting" onclick="filterFurnitureItems('lighting', 'diningroom', 'fdr-lighting')">LIGHTING
+                                        <p class="electronic-filter fdr-lighting" onclick="filterElectronics('lighting', 'diningroom', 'fdr-lighting')">LIGHTING
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
                                     </div>
                                 </section>
                                 <section>
-                                    <h2 class="furniture-bedroom" onclick="toggleFilter('furniture-bedroom')">
+                                    <h2 class="electronic-smart-tech" onclick="toggleFilter('electronic-smart-tech')">
                                         BEDROOM 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
-                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#567367"/>
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#567367"/>
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
                                         </svg>
                                     </h2>
-                                    <div class="furniture-bedroom-filters" >
-                                        <p class="furniture-filter fbr-bed" onclick="filterFurnitureItems('bed', 'bedroom', 'fbr-bed')">BED
+                                    <div class="electronic-smart-tech-filters" >
+                                        <p class="electronic-filter fbr-bed" onclick="filterElectronics('bed', 'bedroom', 'fbr-bed')">BED
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fbr-wardrobe" onclick="filterFurnitureItems('wardrobe', 'bedroom', 'fbr-wardrobe')">WARDROBE
+                                        <p class="electronic-filter fbr-wardrobe" onclick="filterElectronics('wardrobe', 'bedroom', 'fbr-wardrobe')">WARDROBE
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fbr-armchairs" onclick="filterFurnitureItems('armchairs', 'bedroom', 'fbr-armchairs')">ARMCHAIRS
+                                        <p class="electronic-filter fbr-armchairs" onclick="filterElectronics('armchairs', 'bedroom', 'fbr-armchairs')">ARMCHAIRS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fbr-drawer" onclick="filterFurnitureItems('drawer', 'bedroom', 'fbr-drawer')">DRAWER
+                                        <p class="electronic-filter fbr-drawer" onclick="filterElectronics('drawer', 'bedroom', 'fbr-drawer')">DRAWER
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fbr-shelf" onclick="filterFurnitureItems('shelf', 'bedroom', 'fbr-shelf')">SHELF
+                                        <p class="electronic-filter fbr-shelf" onclick="filterElectronics('shelf', 'bedroom', 'fbr-shelf')">SHELF
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="furniture-filter fbr-lighting" onclick="filterFurnitureItems('lighting', 'bedroom', 'fbr-lighting')">LIGHTING
+                                        <p class="electronic-filter fbr-lighting" onclick="filterElectronics('lighting', 'bedroom', 'fbr-lighting')">LIGHTING
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
                                     </div>
-                                </section>
+                                </section> -->
                             </div>
-                            <div class="furnitures"></div>
+                            <div class="appliances"></div>
                         </div>
                     </section>
                 </div>
-                <div class="decoration hide-element page">
-                    <div class="decoration-cont ">
-                        <h2 class="center pageheader decoration-header upper"> DECORATION </h2>
+                <div class="electronic hide-element page">
+                    <div class="electronics-cont">
+                        <h2 class="center pageheader electronics-header upper"> ELECTRONICS </h2>
                         <div class="furniture-grid">
                             <div class="furniture-filters">
                                 <section>
-                                    <h2 class="decoration-living-room" onclick="toggleFilter('decoration-living-room')">
-                                        LIVING ROOM 
+                                    <h2 class="electronic-computing" onclick="toggleFilter('electronic-computing')">
+                                        COMPUTING 
                                         <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
-                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#567367"/>
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
                                         </svg>
                                         <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#567367"/>
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
                                         </svg>
                                     </h2>
-                                    <div class="decoration-living-room-filters">
-                                        <p class="decoration-filter dlr-table-art" onclick="filterDecorationItems('table-art', 'livingroom', 'dlr-table-art')">TABLE ART 
+                                    <div class="electronic-computing-filters">
+                                        <p class="electronic-filter ec-laptops" onclick="filterElectronics('laptops', 'computing', 'ec-laptops')">LAPTOPS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="decoration-filter dlr-mirror" onclick="filterDecorationItems('mirror', 'livingroom', 'dlr-mirror')">MIRROR
+                                        <p class="electronic-filter ec-side-table" onclick="filterElectronics('side-table', 'computing', 'ec-side-table')">DESKTOPS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="decoration-filter dlr-wall-decor" onclick="filterDecorationItems('wall-decor', 'livingroom', 'dlr-wall-decor')">WALL DECOR
+                                        <p class="electronic-filter ec-armchairs" onclick="filterElectronics('armchairs', 'computing', 'ec-armchairs')">TABLETS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="decoration-filter dlr-plants" onclick="filterDecorationItems('plants', 'livingroom', 'dlr-plants')">PLANTS
+                                        <p class="electronic-filter ec-tv-furniture" onclick="filterElectronics('tv-furniture', 'computing', 'ec-tv-furniture')">MONITORS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="decoration-filter dlr-carpet" onclick="filterDecorationItems('carpet', 'livingroom', 'dlr-carpet')">CARPET
+                                        <p class="electronic-filter ec-sofa" onclick="filterElectronics('sofa', 'computing', 'ec-sofa')">PROJECTORS
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
-                                        <p class="decoration-filter dlr-paintings" onclick="filterDecorationItems('paintings', 'livingroom', 'dlr-paintings')">PAINTINGS
+                                        <p class="electronic-filter ec-lighting" onclick="filterElectronics('lighting', 'computing', 'ec-lighting')">ACCESSORIES
                                             <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#797979"/>
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <h2 class="electronic-entertainment" onclick="toggleFilter('electronic-entertainment')">
+                                        ENTERTAINMENT
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
+                                        </svg>
+                                    </h2>
+                                    <div class="electronic-entertainment-filters">
+                                        <p class="electronic-filter fdr-table" onclick="filterElectronics('table', 'diningroom', 'fdr-table')">TV
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fdr-chairs" onclick="filterElectronics('chairs', 'diningroom', 'fdr-chairs')">AUDIO
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fdr-shelf" onclick="filterElectronics('shelf', 'diningroom', 'fdr-shelf')">PHOTO
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fdr-cupboard" onclick="filterElectronics('cupboard', 'diningroom', 'fdr-cupboard')">GAMING
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fdr-lighting" onclick="filterElectronics('lighting', 'diningroom', 'fdr-lighting')">HEADPHONES
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <h2 class="electronic-smart-tech" onclick="toggleFilter('electronic-smart-tech')">
+                                        SMART TECH 
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="minus" width="17" height="3" viewBox="0 0 17 3" fill="none">
+                                            <path d="M17 2.52001L17 0.480011L0 0.48001L-8.91712e-08 2.52001L17 2.52001Z" fill="#3686FF"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="plus hide" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                            <path d="M15.6094 9.43657L15.6094 7.56347L8.74134 7.56347L8.74134 0.695434L6.86824 0.695434L6.86824 7.56347L0.000199971 7.56347L0.00019989 9.43657L6.86824 9.43657L6.86824 16.3046L8.74134 16.3046L8.74134 9.43657L15.6094 9.43657Z" fill="#3686FF"/>
+                                        </svg>
+                                    </h2>
+                                    <div class="electronic-smart-tech-filters" >
+                                        <p class="electronic-filter fbr-bed" onclick="filterElectronics('bed', 'bedroom', 'fbr-bed')">BED
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fbr-wardrobe" onclick="filterElectronics('wardrobe', 'bedroom', 'fbr-wardrobe')">WARDROBE
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fbr-armchairs" onclick="filterElectronics('armchairs', 'bedroom', 'fbr-armchairs')">ARMCHAIRS
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fbr-drawer" onclick="filterElectronics('drawer', 'bedroom', 'fbr-drawer')">DRAWER
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fbr-shelf" onclick="filterElectronics('shelf', 'bedroom', 'fbr-shelf')">SHELF
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
+                                            </svg>
+                                        </p>
+                                        <p class="electronic-filter fbr-lighting" onclick="filterElectronics('lighting', 'bedroom', 'fbr-lighting')">LIGHTING
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="hide" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                <path d="M15.3907 2.57141L6.42857 11.5714L1.77614 6.985L0 8.78928L6.40335 15.2587L17.2737 4.38835L15.3907 2.57141Z" fill="#3686FF"/>
                                             </svg>
                                         </p>
                                     </div>
                                 </section>
                             </div>
-                            <div class="decorations"></div>
+                            <div class="electronics"></div>
                         </div>
                     </div>
                 </div>
