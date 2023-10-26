@@ -172,7 +172,7 @@ body{
 .container{
     width: 70vw;
     aspect-ratio: 1920/1080;
-    background-color: #E4E0DA;
+    background-color: #EDEDED;
     color: #4A4A4A;
     border-radius: var(--radius);
     display: flex;
@@ -229,6 +229,7 @@ body{
     padding: calc(0.5 * var(--padlittle)) var(--padmedium);
     cursor: pointer;
     letter-spacing: 1.84px;
+    font-family: 'Inter', sans-serif;
 }
 .container nav div:nth-child(2) p:hover{
     background-color:  #96C0FF;
@@ -302,14 +303,11 @@ body{
 .cart{
     letter-spacing: 1.84px;
     cursor: pointer;
+    font-weight: 700;
 }
 .cart svg{
     width: 1.67vw;
     aspect-ratio: 1/1;
-}
-.cart .lix{
-    width: 0.7vw;
-    aspect-ratio: 14/12;
 }
 .cart .flexlittle{
     gap: 0.2vw;
@@ -328,15 +326,18 @@ body{
 .homepage{
     display: grid;
     grid-template-columns: 1fr auto;
-    position: relative;
     width: 100%;
     height: 100%;
+    position: relative;
+    background: url(images/gradient.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .heroimage img{
-    width: 44.6vw;
-    height: 40vw;
-    bottom: -10%;
-    left: 32vw;
+    width: 30.2vw;
+    height: 27.73vw;
+    bottom: 4.25vw;
+    right: -1.4vw;
     position: absolute;
     object-fit: contain;
 }
@@ -347,11 +348,11 @@ body{
     gap: 3.6vw;
 }
 .homepage button{
-    border-radius: 2vw;
-    background: #C1B0C8;
+    background: #DF5C60;
     padding: 0.83vw 1.3vw;
     width: max-content;
     border: none;
+    color: white;
     letter-spacing: 1.9px;
     font-size: var(--fontmedium);
 }
@@ -361,13 +362,13 @@ body{
     margin: 0.26vw 0;
 }
 .homepage button:hover{
-    background: #B39ABD;
+    background: #B73C40;
 }
 .homepage h1{
-    color: #567367;
+    color: #3686FF; 
     font-size: 2.7vw;
     font-weight: 700;
-    letter-spacing: 4.94px;
+    letter-spacing: 2.86px;
 }
 .homepage section:first-child p{
     color: #716E6A;
@@ -377,14 +378,13 @@ body{
     letter-spacing: 0.9px;
 }
 .shopping-cart{
-    background-color: #EBE8E4;
+    background-color: #fff;
     position: absolute;
     height: 37.1vw;
     border-radius: 0 0 var(--radius) 0;
     top: 2.3vw;
     right: 0;
     width: 21vw;
-    /* aspect-ratio: 472/825; */
     z-index: 3;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -407,13 +407,12 @@ body{
     cursor: pointer;
 }
 .shopping-cart button{
-    color: #4A4A4A;
+    color:#FFF;
     font-size: 1vw;
     font-weight: 700;
     letter-spacing: 1.9px;
     padding: var(--fontsmall) 1.3vw;
-    border-radius: 2vw;
-    background: #C1B0C8;
+    background: #DF5C60;
     width: max-content;
     margin:1vw auto;
     cursor: pointer;
@@ -427,14 +426,18 @@ body{
 .page{
     padding: 1.5vw 4.5vw 0 4.5vw;
 }
+.special-cont .pageheader{
+    letter-spacing: 1.8px;
+    font-family: 'Inter', sans-serif;
+}
 .pageheader{
-    color: #716E6A;
+    color: #8793A4;
     font-size: 1.875vw;
     font-weight: 700;
     letter-spacing: 3.42px;
     height: 4vw;
 }
-.furniture,.decoration{
+.appliance,.electronic{
     height: 33.2vw;
     overflow-y: scroll;
 }
@@ -452,6 +455,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.7vw;
+    padding-bottom: 2.2vw;
 }
 .offer{
     padding: 0.83vw;
@@ -459,8 +463,9 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0.5vw;
-    height: 21.4vw;
+    height: 21.3vw;
     overflow: hidden;
+    font-family: 'Inter', sans-serif;
 }
 .offer h3{
     color: #716E6A;
@@ -470,9 +475,10 @@ body{
     font-weight: 700;
     line-height: 104.5%;
     letter-spacing: 0.6px;
+    font-family: 'Inter', sans-serif;
 }
 .offer h5{
-    color: #A0A0A0;
+    color: #F2555A;
     text-align: right;
     font-size: 0.73vw;
     height: var(--fontsmall);
@@ -480,6 +486,7 @@ body{
     line-height: 104.5%;
     letter-spacing: 0.35px;
     text-decoration:line-through;
+    font-family: 'Inter', sans-serif;
 }
 .offer p{
     color: #4E4E4E;
@@ -495,6 +502,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: var(--fontsmall);
+    font-family: 'Inter', sans-serif;
 }
 .item-image{
     width: 12.7vw;
@@ -504,20 +512,20 @@ body{
     height: 23.59375vw;
 }
 .offer button{
-    width: 8.95vw;
+    width: 11.14vw;
     aspect-ratio: 172/32;
     text-align: center;
     margin:0 auto 0.5vw auto;
-    border-radius: 1vw;
-    background: #C1B0C8;
+    background: #DF5C60;
     font-size: var(--fontsmall);
     font-weight: 700;
-    letter-spacing: 1.84px;
+    letter-spacing: 1.44px;
     cursor: pointer;
+    height: 1.875vw;
+    color: white;
 }
 .offer button:hover, .shopping-cart button:hover{
-    background: #B39ABD;
-    color: #2B2B2B;
+    background: #B73C40;
 }
 .offer:hover p{
     margin-bottom: 0;
@@ -527,11 +535,12 @@ body{
     grid-template-columns: 24% 1fr;
     gap: 1.2vw;
 }
-.furnitures,.decorations{
+.appliances,.electronics{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: max-content;
     gap: 0.7vw;
+    padding-bottom: 2.2vw;
 }
 .furniture-filters section{
     margin-bottom: 1.5vw;
@@ -539,9 +548,11 @@ body{
     flex-direction: column;
     gap: var(--fontsmall);
     overflow: hidden;
+    font-family: 'Inter', sans-serif;
 }
 .furniture-filters section div{
-    height:11.5vw;
+    height: 11.5vw;
+    font-family: 'Inter', sans-serif;
 }
 .furniture-filters section:has(.hidefilter) div{
     height: 0px;
@@ -555,24 +566,25 @@ body{
     gap: var(--fontsmall);
 }
 .furniture-filters section h2{
-    background: rgba(86, 115, 103, 0.10);
-    color: #567367;
+    background: #C1D9FE;
+    color: #3686FF;
     font-size: 1.25vw;
-    font-weight: 500;
-    letter-spacing: 2.76px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
     height: 2.34vw;
     padding: 0 var(--fontsmall);
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    font-family: 'Inter', sans-serif;
 }
 .furniture-filters section h2:hover{
-    background: rgba(36, 104, 76, 0.20);
-    color: #24684C;
+    background: #96C0FF;
+    color: #0065FE;
 }
 .furniture-filters section h2:hover svg path{
-    fill: #24684C;
+    fill: #0065FE;
 }
 .furniture-filters section h2 .minus{
     width: 0.88vw;
@@ -584,16 +596,17 @@ body{
 }
 .furniture-filters section p{
     padding-left: var(--fontmedium);
-    color: #797979;
+    color: #3686FF;
     font-size: 0.9375vw;
     font-weight: 600;
-    letter-spacing: 2.07px;
+    letter-spacing: 0.36px;
     cursor: pointer;
-    width: 80%;
+    width: 85%;
     margin-left: 0.5vw;
     display: flex;
     align-items: center;
     gap: var(--gap);
+    font-family: 'Inter', sans-serif;
 }
 .furniture-filters section p svg{
     width: 0.9375vw;
@@ -602,7 +615,7 @@ body{
 .furniture-filters section p:hover{
     padding-left: 0;
     text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #2F2F2F;
+    color: #0065FE;
     text-decoration: underline;
 }
 .cart-items{
@@ -619,6 +632,9 @@ body{
 .cart-item img{
     width: 4.3vw;
     aspect-ratio: 1/1;
+}
+.cart-img-cont{
+    border: 1px solid #DCDCDC;
 }
 .cart-item section{
     flex: 1;
@@ -643,10 +659,10 @@ body{
     letter-spacing: 0.4px;
 }
 .cart-item h5{
-    color: #567367;
+    color: #DF5C60;
     text-overflow: ellipsis;
     font-size: var(--fontmedium);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 114%;
     letter-spacing: 0.5px;
     margin-top: 0.5vw;
@@ -731,6 +747,17 @@ body{
 .profile .fxxs svg{
     width: 0.489vw;
     aspect-ratio: 9.39/7.807;
+}
+.cart-active p{
+    color: #716E6A;
+    font-weight: 900 !important;
+}
+.cart-active .wallet path{
+    fill: #3686FF;
+}
+.cart .lix{
+    width: 0.7vw;
+    aspect-ratio: 14/12;
 }
 @media screen and (min-width: 1920px) {
     ::-webkit-scrollbar {
